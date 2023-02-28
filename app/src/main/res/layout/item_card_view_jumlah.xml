@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/spacing_small"
+    android:layout_marginEnd="@dimen/spacing_small"
+    android:layout_marginTop="@dimen/spacing_smaller"
+    android:layout_marginBottom="@dimen/spacing_large"
+    android:elevation="1dp"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="@dimen/rad_larger"
+    app:cardElevation="@dimen/spacing_smaller"
+    app:cardMaxElevation="@dimen/spacing_large">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/halo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:padding="@dimen/spacing_small">
+
+
+        <TextView
+            android:id="@+id/tv_halo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_huge"
+            android:layout_marginTop="@dimen/spacing_large_med"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_content_665"
+            android:textColor="@color/color_posyandu"
+            android:textSize="@dimen/font_title_content_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_semua_usia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_huge"
+            android:layout_marginTop="@dimen/spacing_smaller"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_semua_data"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_title_app_bar"
+            app:layout_constraintTop_toBottomOf="@id/tv_halo"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tv_jumlah_lansia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_giant_more"
+            android:layout_marginTop="@dimen/spacing_large_med"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_jumlah_lansia_555"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_title_content_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_halo"/>
+
+        <TextView
+            android:id="@+id/tv_lansia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_huge_2"
+            android:layout_marginTop="@dimen/spacing_smaller"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_lansia"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_title_app_bar"
+            app:layout_constraintTop_toBottomOf="@id/tv_halo"
+            app:layout_constraintStart_toEndOf="@id/tv_semua_usia"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah_balita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_giant_more"
+            android:layout_marginTop="@dimen/spacing_large_med"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/jumlah_semua_balita_110"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_title_content_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_lansia"/>
+
+        <TextView
+            android:id="@+id/tv_balita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_huge_2"
+            android:layout_marginTop="@dimen/spacing_smaller"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_balita"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_title_app_bar"
+            app:layout_constraintTop_toBottomOf="@id/tv_halo"
+            app:layout_constraintStart_toEndOf="@id/tv_lansia"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

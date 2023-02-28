@@ -1,0 +1,138 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Posdu" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_blue50</item>
+        <item name="colorPrimaryVariant">@color/color_blue60</item>
+        <item name="colorOnPrimary">@color/color_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_yellow50</item>
+        <item name="colorSecondaryVariant">@color/color_yellow60</item>
+        <item name="colorOnSecondary">@color/color_white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--- REVAMP APPS STYLES-->
+    <style name="RevampAppTheme" parent="Theme.Posdu" />
+
+    <!-- TRANSPARENT STATUS BAR -->
+    <style name="RevampAppTheme.TransparentStatusBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!--- REVAMP - TEXT -->
+    <style name="RevampText" parent="android:TextAppearance" />
+
+    <style name="RevampText.MontserratH3">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/font_title_content</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
+    </style>
+
+    <style name="RevampText.MontserratH4">
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="RevampText.MontserratR">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/font_regular</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+    <style name="RevampText.MontserratR.SemiBold">
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">@dimen/font_regular</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+
+    <style name="RevampText.MontserratR.SpacingLetter">
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <style name="RevampText.MontserratS">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">@color/color_gray3</item>
+    </style>
+
+    <style name="RevampText.MontserratSmaller">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/font_smaller</item>
+        <item name="android:textColor">@color/color_gray3</item>
+    </style>
+
+    <!--- REVAMP - BUTTON -->
+    <style name="RevampButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">@dimen/font_regular</item>
+    </style>
+
+    <style name="RevampButton.Primary">
+        <item name="android:background">@drawable/selector_btn_blue_primary</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:radius">@dimen/rad_larger</item>
+    </style>
+
+    <style name="RevampButton.Secondary">
+        <item name="android:background">@drawable/selector_btn_red_secondary</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="RevampButton.Transparent">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/color_blue50</item>
+    </style>
+
+    <style name="ButtonBack">
+        <item name="android:layout_width">@dimen/size_button_back</item>
+        <item name="android:layout_height">@dimen/size_button_back</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+
+    <!--TEXT INPUT-->
+    <style name="TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="errorTextAppearance">@style/RevampText.MontserratSmaller</item>
+        <item name="boxStrokeErrorColor">@color/color_red50</item>
+        <item name="errorTextColor">@color/color_red50</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/RevampText.MontserratR</item>
+        <item name="shapeAppearance">@style/ShapeRounded</item>
+    </style>
+
+    <style name="TextInputEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/RevampText.MontserratR</item>
+    </style>
+
+    <style name="TextInputEdit.AutoComplete">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+
+    </style>
+
+    <style name="ShapeRounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!-- TAB LAYOUT CUSTOM APPEARANCE -->
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

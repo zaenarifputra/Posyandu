@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Posdu</string>
+
+    <!-- Content Description -->
+    <string name="cd_btn_back">Button Back</string>
+    <string name="cd_btn_add">Button Add</string>
+    <string name="cd_illust">Illustration</string>
+    <string name="cd_image">Image</string>
+    <string name="cd_btn_chat">Chat Button</string>
+    <string name="cd_email">Button Email</string>
+    <string name="cd_icon">Icon</string>
+
+    <!-- Text Onboarding-->
+    <string name="tx_next">Lanjut</string>
+    <string name="text_desc_sign_in">Sudah punya akun?</string>
+    <string name="text_sign_in">Login</string>
+    <string name="text_welcom_onboarding">Selamat datang di Posyandu</string>
+
+    <string name="text_onboarding1_title">Selamat datang di Posyandu</string>
+    <string name="text_onboarding2_title">Catat dengan mudah</string>
+    <string name="text_onboarding3_title">kelola data</string>
+
+    <string name="text_onboarding1_desc">Aplikasi yang memudahkan posyandu untuk mencatat semua keperluan dan berkomunikasi dengan mudah dengan data</string>
+    <string name="text_onboarding2_desc">Fitur lengkap untuk mencatat segala informasi, dari balita hingga lansia</string>
+    <string name="text_onboarding3_desc">Menambahkan, mengedit, melihat, dan menghapus data dengan mudah sehingga memudahkan pencarian dan pengolahan data</string>
+    <string name="text_btn_create_account">Buat Akun Kamu</string>
+    <string name="text_btn_next">Lanjut</string>
+    <string name="username">Username / Email</string>
+    <string name="password">Password</string>
+    <string name="text_lupa_password">Lupa password?</string>
+    <string name="text_belum_punya_akun">Belum punya akun?</string>
+    <string name="Handphone">Handphone</string>
+    <string name="daftar">Daftar</string>
+    <string name="masuk">Masuk</string>
+    <string name="sudahpunyakaun">Sudah punya akun?</string>
+    <string name="Login">Login</string>
+    <string name="abcexample">example</string>
+    <string name="dashboard">Dashboard User</string>
+    <string name="dashboard_admin">Dashboard Admin</string>
+    <string name="Email">Email</string>
+    <string name="text_content_665">665</string>
+    <string name="text_semua_data">Semua</string>
+    <string name="text_jumlah_lansia_555">555</string>
+    <string name="text_lansia">Lansia</string>
+    <string name="jumlah_semua_balita_110">110</string>
+    <string name="text_balita">Balita</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

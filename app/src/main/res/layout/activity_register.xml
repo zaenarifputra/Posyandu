@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageButton
+        android:id="@+id/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_arrow_back_"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginStart="@dimen/spacing_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/cd_icon" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_larger"
+        android:layout_marginTop="@dimen/spacing_giant"
+        android:layout_marginEnd="@dimen/spacing_larger"
+        android:contentDescription="@string/cd_icon"
+        android:src="@drawable/logo_posyandu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_huger_two"
+        android:layout_marginStart="@dimen/spacing_huge"
+        android:layout_marginEnd="@dimen/spacing_huge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--Email-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_huge"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext"
+                    android:padding="@dimen/spacing_small" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Username-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailTil"
+                android:layout_marginTop="@dimen/spacing_large_four"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/usernameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext"
+                    android:padding="@dimen/spacing_small" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Password-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameTil"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="@dimen/spacing_large_four"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext"
+                    android:padding="@dimen/spacing_small" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Confrim Password-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cpasswordTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameTil"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="@dimen/spacing_huger_seven"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/cpasswordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext"
+                    android:padding="@dimen/spacing_small" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_smaller"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/Email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_title_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_smaller"
+                android:layout_marginTop="@dimen/spacing_giant_three"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_title_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_smaller"
+                android:layout_marginTop="@dimen/spacing_huger_five"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_title_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_smaller"
+                android:layout_marginTop="@dimen/spacing_huger_eight"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Confirm Password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_title_content" />
+
+            <!--Login Button-->
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cpasswordTil"
+                android:layout_marginStart="@dimen/spacing_giant"
+                android:layout_marginTop="@dimen/spacing_large_three"
+                android:layout_marginEnd="@dimen/spacing_giant"
+                android:background="@drawable/shape_bottom"
+                android:text="@string/daftar"
+                android:textColor="@color/white" />
+
+            <!--No Account Register-->
+            <TextView
+                android:id="@+id/noAccountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/registerBtn"
+                android:layout_marginTop="@dimen/spacing_huge_slight"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginStart="@dimen/spacing_huge"
+                android:padding="10dp"
+                android:text="@string/sudahpunyakaun"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_large"
+                app:layout_constraintEnd_toEndOf="@+id/registerBtn"
+                app:layout_constraintStart_toStartOf="@+id/registerBtn"
+                app:layout_constraintTop_toTopOf="@+id/registerBtn" />
+
+            <TextView
+                android:id="@+id/noAccountTvReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/registerBtn"
+                android:layout_marginStart="@dimen/spacing_huger_six"
+                android:layout_marginTop="@dimen/spacing_huge_slight"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="10dp"
+                android:text="@string/Login"
+                android:textColor="@color/color_blue80"
+                android:textSize="@dimen/font_large"
+                app:layout_constraintEnd_toEndOf="@+id/registerBtn"
+                app:layout_constraintStart_toStartOf="@+id/registerBtn"
+                app:layout_constraintTop_toTopOf="@+id/registerBtn" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
